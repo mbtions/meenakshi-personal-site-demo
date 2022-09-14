@@ -1,68 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBtions</title>
-    <link href="./style.css" rel="stylesheet">
-    <style>
-        *{
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            background: #FCE5E5;
-        }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            background-color: #541616;
-            color: #f7c2c2;
-        }
-        nav h2{
-            padding: 5px;
-        }
-        ul{
-            list-style: none;
-        }
-        li{
-            float: left;
-        }
-        li a{
-            text-decoration: none;
-            color: #f7c2c2;
-        }
-        li h2:hover, li a:hover{
-            color: #fce5e5;   
-        }
-        a p{
-            padding: 5px;
-        }
-        .nav_items{
-          font-family: Monsterrat;
-        }
-        #about, #projects, #contact{
-          background-color: #f7c2c2;
-        }
-        footer{
-          background-color: #541616;
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <h2>MBtions</h2>
-        <ul id="nav_items">
-            <li><a href="#about"><p>About</p></a></li>
-            <li><a href="#projects"><p>Projects</p></a></li>
-            <li><a href="#contact"><p>Contact</p></a></li>
-        </ul>
-    </nav> 
-    <center>
-        <h1 id="me">Meenakshi Bharadwaj</h1>
-        <p><span>Learner | Explorer</span></p>
-    </center>
-</body>
+	<head></head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>MBtions</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header__container" id="header__default">
+            <div id="header__logo"><a href="/" target="#about_MBtions" class="logo">MBtions</a></div>
+            <ul class="nav_links">
+                <li class="nav__item"><a href="/">Home</a></li>
+                <li class="nav__item"><a href="#achievements">Achievements</a></li>
+                <li class="nav__item"><a href="#hobbies">Hobbies</a></li>
+                <li class="nav__item"><a href="#strengths">Strengths</a></li>
+                <li class="nav__item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="about__container">
+	        <div class="about__data">
+                <h2 id="about">KNOW ABOUT ME!</h2>
+ 	            <p>Hi there! I’m Meenakshi,
+                pursuing my majors in <strong>Computer Science</strong>
+                from the <b>University of Delhi.</b>
+                I am currently in my Senior year.
+                I can proficiently code in programming languages
+                such as C++, Java, and Python.
+                I am currently learning Web Development and
+                Android App Development. I sometimes do Competitive Coding
+                for improving my Problem Solving skills.</p>
+            </div>
+	        <img class="profile" src="./images/avatar5.jpg" alt="my profile picture">
+        </div>
+
+        <div class="achievements__container">
+	        <h2 id="achievements">MY ACCOMPLISHMENTS</h2>
+ 	        <table class="achievement_table">
+                <tr>
+                    <th>Year</th>
+                    <th>Accomplishments</th>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>I got 10 CGPA in 10th Grade</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>Got honored for securing Highest marks in CS</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Github Arctic Code Vault Contributor.</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Our Team <strong>'The Kings'</strong> secured
+                         Position <u>520</u>th globally among 1500+ teams in <i>"Reply Challenges 2020"</i>.</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Got my 1st <strong>research paper</strong> published by <strong>IEEE</strong> and 
+                        that is also available on <strong>IEEEXplore</strong>. <br><br>
+                        Research Title - <strong> <a href="https://ieeexplore.ieee.org/document/9596520" target="_blank">CoVShorts: News Summarization Application Based on Deep NLP Transformers for SARS-CoV-2</a>!</strong>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="hobbies__container">
+	        <div class="hobbies__data">
+                <h2 id="hobbies">HOBBIES</h2>
+            </div>
+            <div class="hobbies__item">
+                <div class="hobby_item"><img src="./images/bike-ride.jpg" alt="Hobby-1: Bike Riding-Cycling"><p><strong>Cycling</strong></p></div>
+                <div class="hobby_item"><img src="./images/coding.jpg" alt="Hobby-2: Coding"><p><strong>Coding</strong></p></div>
+                <div class="hobby_item"><img src="./images/googling.png" alt="Hobby-3: Googling"><p><strong>Googling</strong></p></div>
+            </div>
+        </div>
+
+        <div class="strength__container">
+	        <div class="strength__data">
+                <h2 id="strengths">STRENGTHS</h2>
+            </div>
+            <div class="strength__items">
+                <div class="strength_item"><p>Believer</p></div>
+                <div class="strength_item"><p>Determined</p></div>
+                <div class="strength_item"><p>Attentive</p></div>
+            </div>
+        </div>
+
+        <div class="about_MBtions">
+        </div>
+
+        <div class="contact__container">
+            <div id="contact">Let's connect on socials!</div>
+            <ul class="contact__default">
+                <li class="contact__link"><a href="https://www.instagram.com/mbtions" class="fa fa-instagram"></a></li>
+                <li class="contact__link"><a href="https://www.linkedin.com/in/mbtions" class="fa fa-linkedin"></a></li>
+                <li class="contact__link"><a href="https://www.github.com/mbtions" class="fa fa-github"></a></li>
+                <li class="contact__link"><a href="https://www.twitter.com/mbtions" class="fa fa-twitter"></a></li>
+            </ul>
+        </div>
+    </body>
 </html>
